@@ -1,0 +1,116 @@
+=====================================================
+                 APP TIMER - SETUP GUIDE
+=====================================================
+
+App Timer tracks how long your laptop is in use each day
+and how much time you spend in each app.
+
+  - Screen time: counts while the laptop is awake and unlocked.
+  - App time: see how many hours you spend in each app.
+  - Watched apps: pick any app to "watch". It only counts time
+    while it's in front, and if you leave it running in the
+    background, App Timer pauses its time and reminds you
+    to go back to it.
+
+Works on Windows 10 and Windows 11.
+
+
+-----------------------------------------------------
+ STEP 1 - Install Python (one time only, free)
+-----------------------------------------------------
+Skip this step if Python is already installed.
+
+ 1. Go to:  https://www.python.org/downloads/
+ 2. Click the yellow "Download Python" button.
+ 3. Open the file you downloaded.
+ 4. IMPORTANT: on the first screen, tick the box
+       [x] Add python.exe to PATH
+    at the bottom.
+ 5. Click "Install Now" and wait for it to finish.
+ 6. Click "Close".
+
+(Don't change any other options. The default install
+ already includes everything App Timer needs.)
+
+
+-----------------------------------------------------
+ STEP 2 - Put App Timer in a folder
+-----------------------------------------------------
+ 1. Right-click the "App Timer.zip" file and choose
+    "Extract All...", then click "Extract".
+ 2. Move the extracted "App Timer" folder somewhere it
+    can stay, for example your Documents folder.
+    (Don't run it from inside the zip file.)
+
+The folder should contain:
+    app_timer.pyw
+    Start App Timer.bat
+    SETUP.txt
+
+
+-----------------------------------------------------
+ STEP 3 - Start it
+-----------------------------------------------------
+ Double-click  "Start App Timer.bat"
+
+ If Windows shows "Windows protected your PC":
+   click "More info", then "Run anyway".
+   (Windows shows this for any file downloaded from
+    the internet or received from someone else.)
+
+
+-----------------------------------------------------
+ STEP 4 - Start it automatically (recommended)
+-----------------------------------------------------
+ In App Timer, open "Settings" in the sidebar and turn on
+ "Start with Windows". It will then start by itself every
+ time you sign in and keep tracking in the background.
+
+
+-----------------------------------------------------
+ HOW TO USE
+-----------------------------------------------------
+ Dashboard     - today's screen time, your most used app,
+                 activity by hour, and your top apps.
+ Apps          - every app's time for any day. Use the
+                 < > arrows to look at past days.
+ History       - the last 14 days. Click a day to see
+                 its apps.
+ Watched apps  - add the apps you want reminders for and
+                 set how many minutes they can stay in the
+                 background before you get a reminder.
+ Settings      - start with Windows, reminders, sound.
+
+ To watch an app quickly: go to "Apps" and click the
+ "Watch" button next to it.
+
+ Closing the window does NOT stop tracking. App Timer
+ keeps running and stays on the taskbar.
+ To stop it completely, click "Quit App Timer" at the
+ bottom of the sidebar.
+
+
+-----------------------------------------------------
+ TROUBLESHOOTING
+-----------------------------------------------------
+ * "Python was not found on this PC"
+     Do Step 1 again and make sure you tick
+     "Add python.exe to PATH". Then restart the laptop.
+
+ * Nothing happens when I double-click
+     App Timer might already be running. Check the
+     taskbar, or double-click again to bring it to the
+     front.
+
+ * Where is my data saved?
+     %APPDATA%\AppTimer\data.json
+     (Paste that path into the File Explorer address bar.)
+     Everything stays on your own laptop. Nothing is
+     sent anywhere.
+
+ * How do I uninstall?
+     1. In Settings, turn off "Start with Windows".
+     2. Click "Quit App Timer".
+     3. Delete the App Timer folder.
+     4. (Optional) Delete the %APPDATA%\AppTimer folder
+        to remove your saved history.
